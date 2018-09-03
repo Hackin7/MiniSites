@@ -1,0 +1,49 @@
+body{
+	background-color:LightCyan;
+	height: 100vh;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+#calculator{
+	width:24em;
+	padding:1em;
+	background-color:grey;
+	border:1px solid;
+	border-radius:5%;
+}
+#display{
+	background-color:white;
+	padding:1em;
+	margin:1em;
+	text-align:right;
+	font-family:Courier;
+}
+button{
+	box-shadow:0 0 0 0;
+	width:5em;
+	height:5em;
+	background-color:DimGrey;
+	color:white;
+}
+
+#inputs{
+	display:flex;
+	padding:1em;
+	margin:1em;
+	border:1px solid;
+}
+#numbers{
+	width:15em;
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+* {box-sizing: border-box;}
+#operators{display:grid;grid-template-columns: 1fr;}
+#others{display:grid;}
+
+#add,#subtract,#multiply,#divide,#decimal{
+	background-color:SlateGrey;
+}
+#equals{background-color:MediumBlue;height:10em;}
+#clear{background-color:DarkRed;}
