@@ -7,11 +7,17 @@
 
 <body>
 <h1>MiniSite Text Editor</h1>
-<input id="regex"/>
-<div contenteditable>Hi</div>
+Regex:<input id="regex"/><br>
+Replace with:<input id="replacement"/><br>
+<button id="replace">Replace</button><br><br>
+<div contenteditable id="text">Hi</div>
 </body>
 
 <script>
-var re = new RegExp("a|b", "i");
+function replace(){
+	let re = new RegExp(document.getElementById("regex").value, "i");
+	document.getElementById("text").innerHTML = document.getElementById("text").innerHTML.replace(re,document.getElementById("replacement").value);
+}
+document.getElementById("replace").addEventListener("click", replace);
 </script>
 </html>
